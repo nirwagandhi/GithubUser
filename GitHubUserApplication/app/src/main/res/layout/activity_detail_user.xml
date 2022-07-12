@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".DetailUserActivity">
+
+
+    <ImageView
+        android:id="@+id/img_user_detail"
+        style="@style/ProfileDetail"
+        android:contentDescription="@string/ImageDetailUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_name_detail"
+        style="@style/TextContent.Big"
+        android:text="@string/username"
+        app:layout_constraintEnd_toEndOf="@+id/img_user_detail"
+        app:layout_constraintStart_toStartOf="@+id/img_user_detail"
+        app:layout_constraintTop_toBottomOf="@+id/img_user_detail" />
+
+    <TextView
+        android:id="@+id/tv_repository"
+        style="@style/TextContent.Follow"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/tv_follower"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_company_detail" />
+
+    <TextView
+        android:id="@+id/tv_follower"
+        style="@style/TextContent.Follow"
+        android:layout_marginTop="32dp"
+        android:text="@string/_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_company_detail"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="@+id/tv_company_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_company_detail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_following"
+        style="@style/TextContent.Follow"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_follower"
+        app:layout_constraintTop_toBottomOf="@+id/tv_company_detail" />
+
+    <TextView
+        android:id="@+id/tv_username_detail"
+        style="@style/TextContent"
+        android:text="@string/nameuser"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_detail" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextContent.Small"
+        android:text="@string/repository"
+        app:layout_constraintEnd_toEndOf="@+id/tv_repository"
+        app:layout_constraintStart_toStartOf="@+id/tv_repository"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repository" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextContent.Small"
+        android:text="@string/followers"
+        app:layout_constraintEnd_toEndOf="@+id/tv_follower"
+        app:layout_constraintStart_toStartOf="@+id/tv_follower"
+        app:layout_constraintTop_toBottomOf="@+id/tv_follower" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextContent.Small"
+        android:layout_marginTop="8dp"
+        android:text="@string/following"
+        app:layout_constraintEnd_toEndOf="@+id/tv_following"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/tv_following"
+        app:layout_constraintTop_toBottomOf="@+id/tv_following" />
+
+    <TextView
+        android:id="@+id/tv_company_detail"
+        style="@style/TextContent"
+        android:text="@string/companyUser"
+        app:layout_constraintEnd_toEndOf="@+id/tv_username_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_username_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location_detail" />
+
+    <TextView
+        android:id="@+id/tv_location_detail"
+        style="@style/TextContent"
+        android:text="@string/location"
+        app:layout_constraintEnd_toEndOf="@+id/tv_username_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_username_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username_detail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
